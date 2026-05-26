@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raviant Company Profile</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        /* FIRST PAGE */
+
+        .hero{
+            height:100vh;
+            width:100%;
+            background:#021b3a;
+            overflow:hidden;
+        }
+
+        .hero img{
+            width:100%;
+            height:100vh;
+            object-fit:cover;
+        }
+
+        /* CONTAINER */
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        /* CARD */
+
+        .card{
+            background:white;
+            padding:30px;
+            margin-bottom:30px;
+            border-radius:12px;
+            box-shadow:0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#0b3d91;
+            margin-bottom:20px;
+            text-align:center;
+            font-size:35px;
+        }
+
+        /* ABOUT */
+
+        .about{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+            align-items:center;
+        }
+
+        .about img{
+            width:400px;
+            border-radius:10px;
+        }
+
+        .about-text{
+            flex:1;
+            line-height:1.8;
+            font-size:18px;
+        }
+
+        /* STATS */
+
+        .stats{
+            display:flex;
+            justify-content:space-around;
+            flex-wrap:wrap;
+            text-align:center;
+            gap:20px;
+        }
+
+        .stat-box{
+            background:#0b3d91;
+            color:white;
+            padding:30px;
+            border-radius:10px;
+            width:220px;
+        }
+
+        .stat-box h3{
+            font-size:40px;
+            margin-bottom:10px;
+        }
+
+        /* SERVICES */
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:20px;
+        }
+
+        .service-box{
+            background:#eef4ff;
+            border-radius:12px;
+            overflow:hidden;
+            transition:0.3s;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .service-box:hover{
+            transform:translateY(-8px);
+        }
+
+        .service-box img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+
+        .service-content{
+            padding:20px;
+        }
+
+        .service-content h3{
+            color:#0b3d91;
+            margin-bottom:10px;
+        }
+
+        ul{
+            margin-left:20px;
+            line-height:1.8;
+        }
+
+        /* LAST PAGE */
+
+        .last-page{
+            height:100vh;
+            width:100%;
+            overflow:hidden;
+        }
+
+        .last-page img{
+            width:100%;
+            height:100vh;
+            object-fit:cover;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:#0b3d91;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- FIRST PAGE -->
+
+    <header class="hero">
+
+        <img src="C:\Users\krish\OneDrive\Pictures\logo.png" alt="Raviant Logo">
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="container">
+
+        <!-- ABOUT -->
+
+        <div class="card">
+
+            <h2>About Company</h2>
+
+            <div class="about">
+
+                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" alt="Office">
+
+                <div class="about-text">
+
+                    <p>
+                        Raviant is a global solutions center for Engineering Design,
+                        combining people, processes, and technology to deliver
+                        high-quality engineering services.
+                    </p>
+
+                    <br>
+
+                    <p><b>We Focus On:</b></p>
+
+                    <ul>
+                        <li>On-Time Delivery</li>
+                        <li>On-Spec Projects</li>
+                        <li>On-Budget Solutions</li>
+                        <li>Risk Reduction</li>
+                        <li>Project Acceleration</li>
+                    </ul>
+
+                    <br>
+
+                    <p>
+                        Headquartered in Hyderabad with development center in India.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HIGHLIGHTS -->
+
+        <div class="card">
+
+            <h2>Company Highlights</h2>
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h3>2+</h3>
+                    <p>Employees & Consultants</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Engineering Solutions</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>24/7</h3>
+                    <p>Client Support</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SERVICES -->
+
+        <div class="card">
+
+            <h2>Our Services</h2>
+
+            <div class="services">
+
+                <!-- SERVICE 1 -->
+
+                <div class="service-box">
+
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="CAD">
+
+                    <div class="service-content">
+
+                        <h3>CAD Drafting Services</h3>
+
+                        <ul>
+                            <li>Land Base Drafting</li>
+                            <li>PDF Conversion</li>
+                            <li>Redline Drawing Conversion</li>
+                            <li>CAD Standardization</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 2 -->
+
+                <div class="service-box">
+
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Permit">
+
+                    <div class="service-content">
+
+                        <h3>Permit Plans</h3>
+
+                        <ul>
+                            <li>Aerial & UG Permits</li>
+                            <li>Railroad Permits</li>
+                            <li>Pipeline Permits</li>
+                            <li>DOT Permits</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 3 -->
+
+                <div class="service-box">
+
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Traffic">
+
+                    <div class="service-content">
+
+                        <h3>Traffic Control Plans</h3>
+
+                        <ul>
+                            <li>TCP/MOT Plans</li>
+                            <li>Parking Studies</li>
+                            <li>Traffic Safety</li>
+                            <li>Crosswalk Designs</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 4 -->
+
+                <div class="service-box">
+
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Fiber">
+
+                    <div class="service-content">
+
+                        <h3>FTTX Design</h3>
+
+                        <ul>
+                            <li>Fiber Design</li>
+                            <li>Wireless Design</li>
+                            <li>Network Planning</li>
+                            <li>OSP/ISP Engineering</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 5 -->
+
+                <div class="service-box">
+
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Pole">
+
+                    <div class="service-content">
+
+                        <h3>Pole Loading Analysis</h3>
+
+                        <ul>
+                            <li>Pole Annotations</li>
+                            <li>Make-ready Designs</li>
+                            <li>Strength Calculations</li>
+                            <li>Tension & Sag Analysis</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 6 -->
+
+                <div class="service-box">
+
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da" alt="Pipeline">
+
+                    <div class="service-content">
+
+                        <h3>Piping Services</h3>
+
+                        <ul>
+                            <li>Pipeline Permits</li>
+                            <li>Railroad & Pipeline Plans</li>
+                            <li>Underground Utility Design</li>
+                            <li>Pipeline CAD Drafting</li>
+                            <li>State & County Plans</li>
+                            <li>City & DOT Permits</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <!-- SERVICE 7 -->
+
+<div class="service-box">
+
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="Web Designing">
+
+    <div class="service-content">
+
+        <h3>Web Designing</h3>
+
+        <ul>
+            <li>Responsive Website Design</li>
+            <li>HTML & CSS Development</li>
+            <li>Landing Page Design</li>
+            <li>Portfolio Websites</li>
+            <li>Business Website Development</li>
+        </ul>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Raviant Company | All Rights Reserved</p>
+
+    </footer>
+
+    <!-- LAST PAGE -->
+
+    <section class="last-page">
+
+        <img src="C:\Users\krish\OneDrive\Pictures\lastpage.png" alt="Last Page">
+
+    </section>
+
+</body>
+
+</html>
